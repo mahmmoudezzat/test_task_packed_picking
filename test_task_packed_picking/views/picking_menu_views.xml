@@ -1,0 +1,5 @@
+<odoo>
+    <data>
+        <menuitem id="menu_inventory_root" name="Pack Products" sequence="10" parent="stock.menu_stock_root" action="action_pack_products_wizard_form"/>
+</data>
+</odoo>

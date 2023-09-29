@@ -1,0 +1,48 @@
+<odoo>
+    <data>
+        <record id="view_pack_products_wizard_form" model="ir.ui.view">
+            <field name="name">pack.products.wizard.form</field>
+            <field name="model">pack.products.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Picking Products" class="oe_form_container">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="operation_type_id"/>
+                                <field name="location_id"/>
+                                <field name="location_dest_id"/>
+                                <field name="owner_id"/>
+                            </group>
+                            <group>
+                                <field name="stock_move_data">
+                                    <tree>
+                                        <field name="product_id"/>
+                                        <field name="qty_done"/>
+                                        <field name="serial"/>
+                                    </tree>
+                                </field>
+                            </group>
+                            <group>
+                                <field name="package_name"/>
+                                <field name="create_lots"/>
+                                <field name="set_ready"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Pack Products" type="object" name="pack_products" class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_pack_products_wizard_form" model="ir.actions.act_window">
+            <field name="name">Pack Products</field>
+            <field name="res_model">pack.products.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>

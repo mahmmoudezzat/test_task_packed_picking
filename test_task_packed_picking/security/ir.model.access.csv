@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_test_task_packed_picking,test.task,model_pack_products_wizard,base.group_user,1,1,1,1
+access_stock_move_data,stock_move_data,model_stock_move_data,base.group_user,1,1,1,1
+
