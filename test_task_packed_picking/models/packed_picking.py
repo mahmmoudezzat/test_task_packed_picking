@@ -59,6 +59,6 @@ class TestTaskPackedPicking(models.Model):
 class StockMoveData(models.Model):
     _name = 'stock.move.data'
 
-    product_id = fields.Integer(string='product')
-    qty_done = fields.Float(string='Quantity Done')
+    product_id = fields.Integer('Product')
+    qty_done = fields.Float('Quantity Done')
     serial = fields.Char('Serial Number')

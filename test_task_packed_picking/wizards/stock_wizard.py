@@ -16,19 +16,6 @@ class PackProductsWizard(models.TransientModel):
 
     def pack_products(self):
         stock_picking = self.env['stock.picking']
-        # another solution to create stock_move_data using stock.move
-        # product_id =[]
-        # qty_done = []
-        # serial = []
-        #
-        # for move in self.stock_move_data:
-        #     product_id.append(move.product_id.product_tmpl_id.id)
-        #     qty_done.append(move.product_uom_qty)
-        #     if move.lot_ids:
-        #         serial.append(move.lot_ids.ids[0])
-        #     else:
-        #         serial.append("")
-        # stock_move_data = list(zip(product_id, qty_done,serial))
         stock_picking._create_packed_picking(
             self.operation_type_id,
             self.stock_move_data,
