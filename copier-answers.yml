@@ -2,7 +2,7 @@
 _commit: v1.14.2
 _src_path: gh:oca/oca-addons-repo-template
 ci: GitHub
-dependency_installation_mode: PIP
+dependency_installation_mode: stock
 generate_requirements_txt: true
 github_check_license: true
 github_ci_extra_env: {}
@@ -16,9 +16,9 @@ org_name: Odoo Community Association (OCA)
 org_slug: OCA
 rebel_module_groups: []
 repo_description: Odoo modules for Point of Sale.
-repo_name: Point of Sale
-repo_slug: pos
-repo_website: https://github.com/OCA/pos
+repo_name: Tas
+repo_slug: test_task_packed_picking
+repo_website: https://github.com/OCA
 travis_apt_packages: []
 travis_apt_sources: []
 
